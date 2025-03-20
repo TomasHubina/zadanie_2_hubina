@@ -1,0 +1,42 @@
+{
+    "portfolio_foto1": {
+        "foto": "img/portfolio/portfolio1.jpg",
+        "alt": "Web stránka 1"
+    },
+    "portfolio_foto2": {
+        "foto": "img/portfolio/portfolio2.jpg",
+        "alt": "Web stránka 2"
+    },
+    "portfolio_foto3": {
+        "foto": "img/portfolio/portfolio3.jpg",
+        "alt": "Web stránka 3"
+    },
+    "portfolio_foto4": {
+        "foto": "img/portfolio/portfolio4.jpg",
+        "alt": "Web stránka 4"
+    },
+    "portfolio_foto5": {
+        "foto": "img/portfolio/portfolio5.jpg",
+        "alt": "Web stránka 5"
+    },
+    "portfolio_foto6": {
+        "foto": "img/portfolio/portfolio6.jpg",
+        "alt": "Web stránka 6"
+    },
+    "portfolio_foto7": {
+        "foto": "img/portfolio/portfolio7.jpg",
+        "alt": "Web stránka 7"
+    },
+    "portfolio_foto8": {
+        "foto": "img/portfolio/portfolio8.jpg",
+        "alt": "Web stránka 8"
+    },
+
+    "stranky": {
+    "index": ["css/style.css", "css/slider.css"],
+    "portfolio": ["css/style.css", "css/banner.css","css/portfolio.css"],
+    "qna": ["css/style.css", "css/banner.css","css/accordion.css"],
+    "kontakt": ["css/style.css", "css/banner.css","css/form.css"]
+    }
+
+}
