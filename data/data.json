@@ -1,35 +1,43 @@
 {
     "portfolio_foto1": {
         "foto": "img/portfolio/portfolio1.jpg",
-        "alt": "Web stránka 1"
+        "alt": "Web stránka 1",
+        "url": "https://github.com/TomasHubina"
     },
     "portfolio_foto2": {
         "foto": "img/portfolio/portfolio2.jpg",
-        "alt": "Web stránka 2"
+        "alt": "Web stránka 2",
+        "url": "https://github.com/TomasHubina"
     },
     "portfolio_foto3": {
         "foto": "img/portfolio/portfolio3.jpg",
-        "alt": "Web stránka 3"
+        "alt": "Web stránka 3",
+        "url": "https://github.com/TomasHubina"
     },
     "portfolio_foto4": {
         "foto": "img/portfolio/portfolio4.jpg",
-        "alt": "Web stránka 4"
+        "alt": "Web stránka 4",
+        "url": "https://github.com/TomasHubina"
     },
     "portfolio_foto5": {
         "foto": "img/portfolio/portfolio5.jpg",
-        "alt": "Web stránka 5"
+        "alt": "Web stránka 5",
+        "url": "https://github.com/TomasHubina"
     },
     "portfolio_foto6": {
         "foto": "img/portfolio/portfolio6.jpg",
-        "alt": "Web stránka 6"
+        "alt": "Web stránka 6",
+        "url": "https://github.com/TomasHubina"
     },
     "portfolio_foto7": {
         "foto": "img/portfolio/portfolio7.jpg",
-        "alt": "Web stránka 7"
+        "alt": "Web stránka 7",
+        "url": "https://github.com/TomasHubina"
     },
     "portfolio_foto8": {
         "foto": "img/portfolio/portfolio8.jpg",
-        "alt": "Web stránka 8"
+        "alt": "Web stránka 8",
+        "url": "https://github.com/TomasHubina"
     },
 
     "stranky": {
