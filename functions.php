@@ -12,7 +12,6 @@ function preparePortfolio(int $numberOfRows = 2, int $numberOfCols = 4): array {
 }
 
 function finishPortfolio() {
-    // Načítanie údajov zo súboru data.json
     $jsonData = file_get_contents(__DIR__ . '/data/data.json');
     $portfolioData = json_decode($jsonData, true);
 
@@ -21,11 +20,10 @@ function finishPortfolio() {
     foreach ($portfolio as $row => $col) {
         echo '<div class="row">';
         foreach ($col as $index) {
-            // Získanie údajov pre konkrétny index
             $fotoKey = 'portfolio_foto' . $index;
-            $foto = $portfolioData[$fotoKey]['foto'] ?? 'img/default.jpg'; // Predvolený obrázok
+            $foto = $portfolioData[$fotoKey]['foto'] ?? 'img/default.jpg'; 
             $alt = $portfolioData[$fotoKey]['alt'] ?? 'Web stránka ' . $index;
-            $url = $portfolioData[$fotoKey]['url'] ?? '#'; // Predvolený odkaz
+            $url = $portfolioData[$fotoKey]['url'] ?? '#'; 
 
             echo '<a href="' . $url . '" class="col-25 portfolio" id="portfolio-' . $index . '" style="background-image: url(\'' . $foto . '\');">
                 <div class="portfolio-content">
