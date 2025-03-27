@@ -1,3 +1,15 @@
+<?php
+// Spustenie session
+session_start();
+
+// Kontrola, či bola odoslaná požiadavka na prepnutie dark mode
+if (isset($_GET['dark_mode'])) {
+    $_SESSION['dark_mode'] = $_GET['dark_mode'] === 'on' ? 'on' : 'off';
+}
+
+// Nastavenie triedy pre dark mode
+$darkModeClass = isset($_SESSION['dark_mode']) && $_SESSION['dark_mode'] === 'on' ? 'dark-mode' : '';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,26 +20,13 @@
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <header class="container main-header">
-        <div>
-          <a href="index.html">
-            <img src="img/logo.png" height="40">
-          </a>
-        </div>
-      <nav class="main-nav">
-        <ul class="main-menu" id="main-menu">
-            <li><a href="index.html">Domov</a></li>
-            <li><a href="portfolio.php">Portfólio</a></li>
-            <li><a href="qna.html">Q&A</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-        <a class="hamburger" id="hamburger">
-            <i class="fa fa-bars"></i>
-        </a>
-      </nav>
-    </header>
-    
+<body  class="<?php echo $darkModeClass; ?>">
+<?php
+  $file_path = "header.php";
+    if(!require($file_path)) {
+      echo"Failed to include $file_path";
+}
+?>
     <main>
       <section class="slides-container">
         <div class="slide fade">

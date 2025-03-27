@@ -43,7 +43,7 @@ header{
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  z-index: 1; 
+  z-index: 99999999; 
   max-width: 100%; 
 }
 .main-menu li{
@@ -168,3 +168,91 @@ footer p a{
   
 }
 
+/* Dark mode štýly */
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark-mode a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+body.dark-mode .logo-holder img {
+  filter: invert(1); /* Invertuje farby loga (čierne na biele) */
+}
+
+body.dark-mode header {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark-mode footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark-mode .main-menu li a {
+  color: #ffffff;
+}
+
+body.dark-mode .main-menu li:hover a {
+  color: #00bfff;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode li {
+  color: #ffffff;
+}
+
+body.dark-mode .bg-dark {
+  background-color: #000000;
+}
+
+body.dark-mode .text-white {
+  color: #ffffff;
+}
+
+body.dark-mode .text-dark {
+  color: #ffffff;
+}
+
+body.dark-mode .portfolio-section {
+  background-color: #000000;
+}
+
+body.dark-mode .portfolio {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark-mode .portfolio-text {
+  color: #ffffff;
+}
+
+body.dark-mode .row {
+  background-color: #000000;
+}
+
+body.dark-mode .row .col-25,
+body.dark-mode .row .col-33,
+body.dark-mode .row .col-50,
+body.dark-mode .row .col-100 {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark-mode main {
+  background-color: #000000;
+}
+
+body.dark-mode section {
+  background-color: #000000;
+}
