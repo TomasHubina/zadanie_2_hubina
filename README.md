@@ -1,1 +1,1 @@
-# zadanie_2_hubina
+# zadanie 2 a dark mode
