@@ -40,6 +40,19 @@
         "url": "img/portfolio/portfolio8.jpg"
     },
 
+    "otazky": [
+        "Aké sú vaše služby?",
+        "Ako môžem kontaktovať podporu?",
+        "Kde nájdem vaše portfólio?",
+        "Aké sú vaše ceny?"
+    ],
+    "odpovede": [
+        "Ponúkame širokú škálu služieb vrátane vývoja webových stránok a aplikácií.",
+        "Kontaktovať podporu môžete prostredníctvom e-mailu alebo telefónu.",
+        "Naše portfólio nájdete na stránke Portfólio.",
+        "Ceny závisia od konkrétneho projektu. Kontaktujte nás pre viac informácií."
+    ],
+    
     "stranky": {
     "index": ["css/style.css", "css/slider.css"],
     "portfolio": ["css/style.css", "css/banner.css","css/portfolio.css"],
