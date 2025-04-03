@@ -53,13 +53,15 @@ $darkModeClass = isset($_SESSION['dark_mode']) && $_SESSION['dark_mode'] === 'on
                 <h2>Otázky a odpovede</h2>
             </div>
         </div>
-        <?php if (!empty($otazkyOdpovede)): ?>
-            <?php foreach ($otazkyOdpovede as $qna): ?>
+        <!-- Vkladanie otázok a odpovedí do akordeónu -->
+        <?php if (!empty($otazkyOdpovede)): ?> <!-- Kontrola, či nie je prázdna databáza -->
+            <?php foreach ($otazkyOdpovede as $qna): ?> <!-- Pre každé vytvorí časť akoredónu -->
                 <div class="accordion">
                     <div class="question"><?php echo htmlspecialchars($qna['otazka']); ?></div>
                     <div class="answer"><?php echo htmlspecialchars($qna['odpoved']); ?></div>
                 </div>
             <?php endforeach; ?>
+            <!-- Výpis ak je prázdna databáza -->
         <?php else: ?>
             <p class="text-center">Žiadne otázky a odpovede neboli nájdené.</p>
         <?php endif; ?>

@@ -60,6 +60,7 @@ class QnA{
             $this->conn = null;
         }
     }
+    // SELECT z databázy (DISTINCT rieši aby sa zobrazila položka len raz)
     public function getQnA() {
         try {
             $sql = "SELECT DISTINCT * FROM qna";
