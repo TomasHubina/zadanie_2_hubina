@@ -1,1 +1,1 @@
-# zadanie 2 a dark mode
+# zadanie 2, dark mode a databáza
