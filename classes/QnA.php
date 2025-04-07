@@ -1,28 +1,21 @@
 <?php
 namespace otazkyodpovede;
+error_reporting(E_ALL); // zapne všetky chyby
+ini_set('display_errors', "On"); // zobrazí chyby na obrazovke
 define('__ROOT__', dirname(dirname(__FILE__)));
-require_once(__ROOT__.'/db/config.php');
+require_once(__ROOT__.'/classes/Database.php');
 use PDO;
 use Exception;
 use PDOException;
+use otazkyodpovede\Database; // Import triedy Database
 
-class QnA{
-    private $conn;
+class QnA extends Database {
+    protected $conn;
     public function __construct() {
         $this->connect();
+        $this->conn = $this->getConnection();
     }
-    private function connect() {
-        $config = DATABASE;
-        $options = array(
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        );
-        try {
-            $this->conn = new PDO('mysql:host=' . $config['HOST'] . ';dbname=' . $config['DBNAME'] . ';port=' . $config['PORT'], $config['USER_NAME'], $config['PASSWORD'], $options);
-        } catch (PDOException $e) {
-                die("Chyba pripojenia: " . $e->getMessage());
-            }
-    }
+
     public function insertQnA(){
         try {
             // Načítanie JSON súboru
@@ -69,6 +62,7 @@ class QnA{
             return $statement->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
             echo "Chyba pri načítaní otázok a odpovedí: " . $e->getMessage();
+            return [];
         }
     }
 }
